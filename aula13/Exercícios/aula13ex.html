@@ -11,15 +11,14 @@
 </body>
 <script>
     const name = prompt('Type your complete name: ');
-    document.body.innerHTML += `Your name is: ${name}<br />`;
-    document.body.innerHTML += `Your name have ${name.length} letters <br />`;
-    document.body.innerHTML += `The second letter of your name is: ${name[1]} <br />`;
-    document.body.innerHTML += `What is the first index of the letter 'r' in your name? ${name.indexOf('r')} <br />`;
-    document.body.innerHTML += `What is the last index of the letter 'r' in your name? ${name.lastIndexOf('r')}<br />`;
-    document.body.innerHTML += `The last 3 letters of your name is: ${name.slice(-3)}<br />`;
-    document.body.innerHTML += `The words of your name is: ${name.split(' ')} <br />`;
-    document.body.innerHTML += `Your name in capital letters: ${nome.toUpperCase()} <br />`;
-
-
+    document.body.innerHTML += `Your name is: <strong>${name}</strong><br />`;
+    document.body.innerHTML += `Your name have <strong>${name.length} letters </strong><br />`;
+    document.body.innerHTML += `The second letter of your name is: <strong>${name[1]} <strong><br />`;
+    document.body.innerHTML += `What is the first index of the letter 'r' in your name? <strong>${name.indexOf('r')} </strong><br />`;
+    document.body.innerHTML += `What is the last index of the letter 'r' in your name? <strong>${name.lastIndexOf('r')} </strong><br />`;
+    document.body.innerHTML += `The last 3 letters of your name is: <strong>${name.slice(-3)} </strong><br />`;
+    document.body.innerHTML += `The words of your name is: <strong>${name.split(' ')} </strong><br />`;
+    document.body.innerHTML += `Your name in capital letters: <strong>${name.toUpperCase()} </strong><br />`;
+    document.body.innerHTML += `Your name in lowercase letters: <strong>${name.toLowerCase()} </strong><br />`;
 </script>
 </html>
