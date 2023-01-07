@@ -8,7 +8,7 @@ const numberRoundUp = document.getElementById('number-ceil');
 const numberDecimalPlaces = document.getElementById('number-two-decimal-places');
 
 yourNumber.innerHTML = number;
-numberSquareRoot.innerHTML = number * 0.5;
+numberSquareRoot.innerHTML = number ** 0.5;
 numberIsInteger.innerHTML = Number.isInteger(number);
 numberIsNaN.innerHTML = Number.isNaN(number);
 numberRoundDown.innerHTML = Math.floor(number);
