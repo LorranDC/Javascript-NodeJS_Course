@@ -18,6 +18,17 @@ body {
   line-height: 1.5em;
 }
 
+.bmi-table{
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.bmi-table ul{
+  margin: 0;
+  width: 50%;
+}
+
 .container {
   max-width: 640px;
   margin: 50px auto;
@@ -25,6 +36,8 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+
+
 
 form input, form label, form button {
   display: block;
