@@ -1,5 +1,5 @@
 {
-  "name": "webpack-boilerplate-import",
+  "name": "modelo-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "core-js": "^3.36.1",
-    "regenerator-runtime": "^0.14.1"
+    "css-loader": "^6.10.0",
+    "regenerator-runtime": "^0.14.1",
+    "style-loader": "^3.3.4"
   }
 }
