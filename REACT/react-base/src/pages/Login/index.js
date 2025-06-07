@@ -12,10 +12,10 @@ export default function Login() {
                 <small>Olá</small>
             </Title>
             <Paragrafo>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, laborum.</p>
+            <p>Lorem ipsum, dolor sit amet.</p>
             </Paragrafo>
 
-            <a href="">Olá</a>
+            <button type='button' >Enviar</button>
         </Container>
 
     )
