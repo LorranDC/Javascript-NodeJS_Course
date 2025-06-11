@@ -53,9 +53,20 @@ ul {
 
 body .Toastify .Toastify__toast-container .Toastify__toast--success {
     background-color: ${colors.successColor};
+    color: white;
+
 }
 body .Toastify .Toastify__toast-container .Toastify__toast--error {
     background-color: ${colors.errorColor};
+    color: white;
+}
+
+body .Toastify .Toastify__toast-container .Toastify__progress-bar {
+    background-color: #fff !important;
+}
+
+body .Toastify .Toastify__toast-container .Toastify__toast-icon {
+    color: #fff !important; // Altere para a cor desejada
 }
     
     

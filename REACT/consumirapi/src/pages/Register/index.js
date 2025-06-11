@@ -7,13 +7,16 @@ import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
 import axios from '../../services/axios';
 import history from '../../services/history';
+import Loading from '../../components/Loading';
 
 export default function Register() {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
 
     async function handleSubmit(e) {
+        
         e.preventDefault();
         let formErrors = false;
 
@@ -36,6 +39,8 @@ export default function Register() {
 
         if(formErrors) return;
 
+        setIsLoading(true);
+
         try {
             await axios.post('/users/', {
                 nome, 
@@ -44,6 +49,8 @@ export default function Register() {
             });
 
             toast.success('Você fez seu cadrastro!');
+             setIsLoading(false);
+
             history.push('/login');
         } catch (err) {
             // const status = get(err, 'response.status', 0);
@@ -51,7 +58,8 @@ export default function Register() {
             
 
             errors.map(error => toast.error(error));
-        }
+            setIsLoading(false);
+        } 
 
 
     }
